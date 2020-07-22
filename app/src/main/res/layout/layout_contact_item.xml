@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contact_item_bg">
+
+    <TextView
+        android:id="@+id/personName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="20sp"
+        android:text="@string/person"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"/>
+    <TextView
+        android:id="@+id/personMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personName"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="15sp"
+        android:text="011 234 567"
+        android:layout_marginBottom="2dp"/>
+
+    <ImageView
+        android:id="@+id/contact_item_call"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@id/personMobile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="38dp"
+        android:src="@drawable/call_50px"/>
+    <ImageView
+        android:id="@+id/contact_item_info"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@id/personMobile"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/info_50px" />
+
+</RelativeLayout>
